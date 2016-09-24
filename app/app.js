@@ -7,9 +7,10 @@ window.$ = window.jQuery = $;
 require('bootstrap');
 
 // import our styles
-// import './stylesheets/base.scss';
+import './stylesheets/base.scss';
 import _ from 'underscore';
 import todoController from './pages/todo';
+// import multimediaController from './pages/multimedia';
 
 // // on document load
 $(function(){
@@ -25,8 +26,11 @@ $(function(){
 
   // kick of the app!
   // which page are we on ???
-  if (window.location.pathname === '/page/todo.html'){
+  if (window.location.pathname === '/pages/todo.html'){
     todoController.init();
+  } else if (window.location.pathname === '/pages/multimedia.html'){
+  console.log('multimedia page Started');
+
   }
   // todo.init();
 
