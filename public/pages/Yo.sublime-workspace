@@ -75,49 +75,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "\n\n\nHow do I creae a new Page?\n\n3 files & 3 tie-ins\n\n\n1. HTML\na. where? /public/pages/newPage.html\nb. tie-in? add a link to \n/app/templates/_pages/main.hbs\n\n2. CSS\na. where? /app/stylesheets/pages/newPage.scss\nb. tie-in? add an import statement to /app/stylesheets/base.scss\n\n\n3. JS\na. where? /app/pages/newPage.js\nb. tie-in? add route in /app/app.js ",
-			"settings":
-			{
-				"buffer_size": 350,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/templates/_pages/main.hbs",
-			"settings":
-			{
-				"buffer_size": 293,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Yo.html",
-			"settings":
-			{
-				"buffer_size": 11,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/pages/Yo.js",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n\nh1 {\n	color: blue;\n}",
-			"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/pages/Yo.css",
-			"file_size": 20,
-			"file_write_time": 131195875280000000,
-			"settings":
-			{
-				"buffer_size": 22,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -157,6 +114,8 @@
 	},
 	"file_history":
 	[
+		"/Users/bijayashrestha/Bijaya Project/ABC/public/pages/123.html",
+		"/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/base.scss",
 		"/Users/bijayashrestha/Bijaya Project/ABC/public/pages/Yo",
 		"/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/pages/multimedia.css",
 		"/Users/bijayashrestha/Bijaya Project/ABC/app/templates/_pages/main.hbs",
@@ -165,7 +124,6 @@
 		"/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/defaults/base-global.scss",
 		"/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/pages/todo.css",
 		"/Users/bijayashrestha/Bijaya Project/ABC/app/pages/multimedia.js",
-		"/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/base.scss",
 		"/Users/bijayashrestha/Bijaya Project/ABC/public/page/multimedia.html",
 		"/Users/bijayashrestha/Bijaya Project/ABC/public/page/todo.html",
 		"/Users/bijayashrestha/Bijaya Project/ABC/public/Bijaya/hunter.css",
@@ -234,151 +192,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								326,
-								350
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"default_dir": "/Users/bijayashrestha/Bijaya Project/ABC",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/templates/_pages/main.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 293,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								219,
-								219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Yo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11,
-								11
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/pages/Yo.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/bijayashrestha/Bijaya Project/ABC/app/stylesheets/pages/Yo.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1,
-								1
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
