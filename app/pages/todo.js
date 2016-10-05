@@ -1,70 +1,71 @@
+
+
 var $ = window.$;
 var Handlebars =window.Handlebars;
-import lscache from 'lscache';
-
-
-var database =[];
-var model = {
-  init: function(){
-    var savedData = lscache.get('todos');
-    if (savedData) {
-    database = savedData;
-    } else {
-      database = [];
-    }
-  },
-  save: function(){
-    var dataToSave = JSON.stringify(database);
-    lscache.set('todos', dataToSave);
-  },
-  get: function(){
-    return database;
-  }
-  
-};
-var view = $('script[type="text/x-template"]').html();
-
+import model from '../models/todoModel';
+import view from 'text!../views/todoItem.tpl'; 
 
 var controller = { // has two functions
   init: function(){
     model.init();
-    // cache some selectors
+    // cache a jquery selector
     controller.addButton = $('.btn-add');
-    // start everything up
+    // compile todoItem template
     controller.compiledTemplate = Handlebars.compile(view);
+    // render the todo Item template
     controller.renderTemplates();
   },
+  // do all the visual stuff
   render: function(compiledTodos){
-    // do all the visual stuff
+    // remove all the event handlers for the todo app
+    // event handlers are functions that get run when a event happens
     controller.destroyEventHandlers();
-    
-    $('.todo-list').html(compiledTodos.join('')); 
+    // compile todos is an array
+    // we are joining the elements of the array together to make one long string
+    // put the long string into the HTML element with a class of "todo-list"
+    $('.todo-list').html(compiledTodos.join(''));
+    // now that all the todos have been added to the aDOM
+    // add all the event handlers for the todo app
+
     controller.createEventHandlers();
-    console.log(database);
+    
   },
   renderTemplates: function(){
     var compiledTodos = [];
+    // get the database
+    // loop over each item in the database
     
     model.get().forEach(function(item, index){   
-      
+      // create an id equal to index+1
+      // the +1 is to make it more human readable
+      // id is required by our view
       item.id = index + 1;  // id is as we have id in html
+      // handlebars, step 2
+      // replace{{id}} with the items id value
       var renderedTodo = controller.compiledTemplate(item);
+      // add this rendered todo to our list of todos
       compiledTodos.push(renderedTodo);
-    });
+    }); // end of forEach
+    // pass list of todos to the render function
     controller.render(compiledTodos);
+    // tell the model to save our data
     model.save();
   },
+  // remove event handlers from app
+  // get ready to re-render
   destroyEventHandlers: function(){
     controller.addButton.off();
     $('input[type="checkbox"]').off();
     $('.close').off();
   },
+  // add the event handlers
   createEventHandlers: function(){
    controller.addButton.on('click', controller.addTodoHandler);
    $('input[type="checkbox"]').on('change', controller.checkedHandler);
    $('.close').on('click', controller.removehandler);
-    
   },
+  // event handler for the close X button
+  // deletes the todo
   removehandler: function(event){
     // which one was clicked??
     console.log(1);
@@ -74,6 +75,7 @@ var controller = { // has two functions
     // update the view
     controller.renderTemplates();
   },
+  // event handler for the checkboxes
   checkedHandler: function(event){
     // which checkbox ???
     var index = $(event.currentTarget).parent().parent().index();
@@ -83,6 +85,8 @@ var controller = { // has two functions
     // view updates automatically, Yay HTML!
     model.save();
   },
+  // event handler for the ADD button
+  // creates a new todo
   addTodoHandler: function(){
     var newTitle = $('.add-input').val();
     if (newTitle === '') return; //empty item then return nothing
@@ -94,7 +98,6 @@ var controller = { // has two functions
     controller.renderTemplates();
   }
 };
-
 module.exports = controller;
 
 

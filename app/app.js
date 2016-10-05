@@ -17,7 +17,7 @@ import threeController from './pages/three';
 
 // // on document load
 $(function(){
-
+  // kick of the app!
   console.log('%c App Started', 'color:green');
 
   // set default template settings
@@ -27,17 +27,38 @@ $(function(){
     escape:      /{{=([\s\S]+?)}}/g
   };
 
-  // kick of the app!
-  // which page are we on ???
-  if (window.location.pathname === '/pages/todo.html'){
-    todoController.init();
-  } else if (window.location.pathname === '/pages/multimedia.html'){
-  console.log('multimedia page Started');
-  } else if (window.location.pathname === '/pages/Yo.html'){
-    d3Controller.init();
-  } else if (window.location.pathname === '/pages/three.html'){
-    threeController.init();
+  
+  // My First Router: which page are we on ?
+  switch(window.location.pathname){
+  case '/pages/todo.html':
+      todoController.init();
+      break;
+  case '/pages/multimedia.html':
+      console.log('multimedia page Started');
+    break;
+  case '/pages/Yo.html':
+      d3Controller.init();
+    break;
+  case '/pages/three.html':
+      threeController.init();
+    break;
   }
+
+
+
+  // if (window.location.pathname === '/pages/todo.html'){
+  //   todoController.init();
+  // } else if (window.location.pathname === '/pages/multimedia.html'){
+  // console.log('multimedia page Started');
+  // } else if (window.location.pathname === '/pages/Yo.html'){
+  //   d3Controller.init();
+  // } else if (window.location.pathname === '/pages/three.html'){
+  //   threeController.init();
+  // }
+  console.log("=============");
+  console.log("Yo, Hire me! bijayashr341@gmail.com");
+  console.log("=============");
+  
   
   // todo.init();
 
