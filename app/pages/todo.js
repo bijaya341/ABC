@@ -90,7 +90,7 @@ var controller = { // has two functions
   addTodoHandler: function(){
     // reads the input using jquery.val()
     var newTitle = $('.add-input').val(); 
-    // quick exit if newTitle is string
+    // quick exit if newTitle is empty string
     if (newTitle === '') return; //empty item then return nothing
     // model.get() returns the database
     //push add an item to the database

@@ -4,10 +4,10 @@
 
 Javascript is the most important language for developing front end.
 *Davinci Coders*
-1. Javascript
-..* HTML
-..* CSS
-2. Python
+1. Javascript ..
+..* HTML ..
+..* CSS ..
+2. Python ..
 [Davinci Coders](https://www.DavinciCoders.com)
 
 
