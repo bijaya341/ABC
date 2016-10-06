@@ -60,16 +60,16 @@ var controller = { // has two functions
   },
   // add the event handlers
   createEventHandlers: function(){
-   controller.addButton.on('click', controller.addTodoHandler);
-   $('input[type="checkbox"]').on('change', controller.checkedHandler);
-   $('.close').on('click', controller.removehandler);
+    controller.addButton.on('click', controller.addTodoHandler);
+    $('input[type="checkbox"]').on('change', controller.checkedHandler);
+    $('.close').on('click', controller.removehandler);
   },
   // event handler for the close X button
   // deletes the todo
   removehandler: function(event){
     // which one was clicked??
     console.log(1);
-   var index = $(event.currentTarget).parent().parent().index();
+    var index = $(event.currentTarget).parent().parent().index();
     // update the database
     model.get().splice(index, 1);
     // update the view
@@ -82,22 +82,32 @@ var controller = { // has two functions
     // update the database
     model.get()[index].completed = !model.get()[index].completed;
     
-    // view updates automatically, Yay HTML!
     model.save();
+    controller.renderTemplates();
   },
   // event handler for the ADD button
   // creates a new todo
   addTodoHandler: function(){
-    var newTitle = $('.add-input').val();
+    // reads the input using jquery.val()
+    var newTitle = $('.add-input').val(); 
+    // quick exit if newTitle is string
     if (newTitle === '') return; //empty item then return nothing
-    model.get().push({                //push below item to model
+    // model.get() returns the database
+    //push add an item to the database
+    model.get().push({      
       title: newTitle,
       completed: false
     });
-    $('.add-input').val(''); 
+
+    // clear the text box
+    $('.add-input').val('');
+    // update the display
     controller.renderTemplates();
   }
 };
+
+// specifies what will be returned
+// when this file is imported
 module.exports = controller;
 
 

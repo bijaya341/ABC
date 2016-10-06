@@ -2,29 +2,29 @@ var THREE = window.THREE;
 
 var app = {
 
-init: function(){
-app.render();
-},
-render: function(){
-var container;
-var camera, scene, renderer;
-init();
-animate();
-function init() {
-container = document.createElement( 'div' );
-document.body.appendChild( container );
-var info = document.createElement( 'div' );
-info.style.position = 'absolute';
-info.style.top = '10px';
-info.style.width = '100%';
-info.style.textAlign = 'center';
-info.innerHTML = '<a href="http://threejs.org" target="_blank">three.js</a> - orthographic view';
-container.appendChild( info );
-camera = new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, - 500, 1000 );
-camera.position.x = 200;
-camera.position.y = 100;
-camera.position.z = 200;
-scene = new THREE.Scene();
+	init: function(){
+		app.render();
+	},
+	render: function(){
+		var container;
+		var camera, scene, renderer;
+		init();
+		animate();
+		function init() {
+			container = document.createElement( 'div' );
+			document.body.appendChild( container );
+			var info = document.createElement( 'div' );
+			info.style.position = 'absolute';
+			info.style.top = '10px';
+			info.style.width = '100%';
+			info.style.textAlign = 'center';
+			info.innerHTML = '<a href="http://threejs.org" target="_blank">three.js</a> - orthographic view';
+			container.appendChild( info );
+			camera = new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, - 500, 1000 );
+			camera.position.x = 200;
+			camera.position.y = 100;
+			camera.position.z = 200;
+			scene = new THREE.Scene();
 	// Grid
 	var size = 500, step = 50;
 	var geometry = new THREE.Geometry();
