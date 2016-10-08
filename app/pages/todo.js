@@ -31,21 +31,18 @@ var controller = { // has two functions
     
   },
   renderTemplates: function(){
-    var compiledTodos = [];
     // get the database
     // loop over each item in the database
     
-    model.get().forEach(function(item, index){   
+    var compiledTodos = model.get().map(function(item, index){   
       // create an id equal to index+1
       // the +1 is to make it more human readable
       // id is required by our view
       item.id = index + 1;  // id is as we have id in html
       // handlebars, step 2
       // replace{{id}} with the items id value
-      var renderedTodo = controller.compiledTemplate(item);
-      // add this rendered todo to our list of todos
-      compiledTodos.push(renderedTodo);
-    }); // end of forEach
+      return controller.compiledTemplate(item);
+      }); // end of forEach
     // pass list of todos to the render function
     controller.render(compiledTodos);
     // tell the model to save our data

@@ -5,10 +5,10 @@ import $ from 'jquery';
 // legacy loading for bootstrap javascript
 window.$ = window.jQuery = $;
 require('bootstrap');
-
 // import our styles
 import './stylesheets/base.scss';
 import _ from 'underscore';
+import navbar from './components/navbar';
 import todoController from './pages/todo';
 import d3Controller from './pages/Yo';
 import threeController from './pages/three';
@@ -27,7 +27,9 @@ $(function(){
     escape:      /{{=([\s\S]+?)}}/g
   };
 
-  
+  // launch navbar
+  navbar.init();
+
   // My First Router: which page are we on ?
   switch(window.location.pathname){
   case '/pages/todo.html':
