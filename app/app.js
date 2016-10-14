@@ -12,6 +12,7 @@ import navbar from './components/navbar';
 import todoController from './pages/todo';
 import d3Controller from './pages/Yo';
 import threeController from './pages/three';
+import bbTodoController from './pages/bb_todo';
 
 // import multimediaController from './pages/multimedia';
 
@@ -32,17 +33,20 @@ $(function(){
 
   // My First Router: which page are we on ?
   switch(window.location.pathname){
+  case '/pages/bb_todo.html':
+    new bbTodoController();
+    break;
   case '/pages/todo.html':
-      todoController.init();
-      break;
+    todoController.init();
+    break;
   case '/pages/multimedia.html':
-      console.log('multimedia page Started');
+    console.log('multimedia page Started');
     break;
   case '/pages/Yo.html':
-      d3Controller.init();
+    d3Controller.init();
     break;
   case '/pages/three.html':
-      threeController.init();
+    threeController.init();
     break;
   }
 
@@ -57,9 +61,9 @@ $(function(){
   // } else if (window.location.pathname === '/pages/three.html'){
   //   threeController.init();
   // }
-  console.log("=============");
-  console.log("Yo, Hire me! bijayashr341@gmail.com");
-  console.log("=============");
+  console.log('=============');
+  console.log('Yo, Hire me! bijayashr341@gmail.com');
+  console.log('=============');
   
   
   // todo.init();
