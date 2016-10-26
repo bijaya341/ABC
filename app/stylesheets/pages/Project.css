@@ -1,0 +1,121 @@
+
+.Project-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: tan;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pulse 5s infinite;
+
+}
+.tech{
+  font-size: 35px;
+  transform: rotate(-30deg);
+  margin-top: 40px;
+  color: blue;
+  font-family: 'Michroma', sans-serif;
+}
+.ctech{
+  font-size: 20px;
+  transform: rotate(-20deg);
+  margin-top: 40px;
+  margin-left: 20px;
+  color: blue;
+  font-family: 'Michroma', sans-serif;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+.add-Project{
+  margin: 10px;
+}
+.image1 img {
+  
+  height: 480px;
+  width: 850px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.8;
+}
+.image2 img {
+ 
+  
+  height: 280px;
+  width: 450px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 0.8;
+}
+  .image:hover {
+  transform: rotateZ(360deg);
+  transition: transform 5s;
+  animation-iteration-count: infinite;
+ }
+
+
+.Head-row{
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Wendy One', sans-serif;
+
+}
+.glyphicon {
+	float: right;
+	margin-top: -20px;
+
+}
+.frame iframe {
+	display: block;
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.column-col1 {
+	display: block;
+	font-size: 15px;
+	margin-top: 50px;
+	margin-left: 20px;
+	
+	
+	
+
+}
+	
+.column-col2 {
+	display: block;
+	font-size: 15px;
+	margin-top: 100px;
+
+
+
+}
+.column-col3 {
+	display: block;
+	font-size: 15px;
+	margin-top: 150px;
+	margin-left: -20px;
+
+    
+
+}
+.frame {
+	
+	margin-left: 20px;
+}
+.link {
+	font-size: 20px;
+	text-align: center;
+}

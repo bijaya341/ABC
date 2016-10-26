@@ -10,7 +10,7 @@ var todoItemView = Backbone.View.extend({
     'click .close': 'removeHandler',
     'click .edit': 'editHandler',
     'click .save': 'saveHandler',
-    'change input[type="checkbox"]': 'checkboxHandler'
+    'change input[type="checkbox"]': 'checkboxHandler',
   },
   initialize: function(item, controller){
     // compile the template
@@ -40,5 +40,6 @@ var todoItemView = Backbone.View.extend({
   checkboxHandler: function(){
     this.controller.changeComplete(this.id);
   }
+  
 });
 module.exports = todoItemView;

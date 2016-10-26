@@ -7,12 +7,14 @@ window.$ = window.jQuery = $;
 require('bootstrap');
 // import our styles
 import './stylesheets/base.scss';
-import _ from 'underscore';
 import navbar from './components/navbar';
 import todoController from './pages/todo';
 import d3Controller from './pages/Yo';
 import threeController from './pages/three';
 import bbTodoController from './pages/bb_todo';
+import ProjectController from './pages/Project';
+import photoSearchController from './pages/photoSearch';
+
 
 // import multimediaController from './pages/multimedia';
 
@@ -20,13 +22,6 @@ import bbTodoController from './pages/bb_todo';
 $(function(){
   // kick of the app!
   console.log('%c App Started', 'color:green');
-
-  // set default template settings
-  _.templateSettings = {
-    evaluate:    /{{([\s\S]+?)}}/g,
-    interpolate: /{{-([\s\S]+?)}}/g,
-    escape:      /{{=([\s\S]+?)}}/g
-  };
 
   // launch navbar
   navbar.init();
@@ -46,7 +41,13 @@ $(function(){
     d3Controller.init();
     break;
   case '/pages/three.html':
-    threeController.init();
+    threeController.init(); // jquery
+    break;
+  case '/pages/Project.html':
+    ProjectController.init(); 
+    break;
+  case '/pages/photoSearch.html':
+    new photoSearchController(); // backbone
     break;
   }
 

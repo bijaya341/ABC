@@ -53,7 +53,7 @@ var ControllerView = Backbone.View.extend({
   },
   changeComplete: function(id){
     if (id >= 0) {
-      this.model.completeTodo(id);
+      this.model.completedTodo(id);
       this.render();
     }
   }
