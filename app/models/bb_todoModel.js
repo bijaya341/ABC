@@ -47,5 +47,4 @@ var model = Backbone.Model.extend({
     this.save();
   }
 });
-
 module.exports = model;
