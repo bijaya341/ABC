@@ -1,11 +1,11 @@
 
 // var $ = window.$;
 import Backbone from 'backbone';
-import bbTodoModel from '../models/bb_todoModel';
-import bbTodoView from '../views/bb_todoView';
+import rTodoModel from '../models/r_todoModel';
+import rTodoView from '../views/r_todoView';
 
 var Controller = Backbone.View.extend({
-  model: new bbTodoModel(),
+  model: new rTodoModel(),
   initialize: function(){
     // fetch will call render when done
     var that = this;
@@ -18,7 +18,7 @@ var Controller = Backbone.View.extend({
     if (this.view !== undefined){
       this.view.removeHandlers();
     }
-    this.view = new bbTodoView(todos, this);
+    this.view = new rTodoView(todos, this);
   },
   addTodo: function(newTitle){
     this.model.addTodo(newTitle);

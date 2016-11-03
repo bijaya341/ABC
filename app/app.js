@@ -12,6 +12,7 @@ import todoController from './pages/todo';
 import d3Controller from './pages/Yo';
 import threeController from './pages/three';
 import bbTodoController from './pages/bb_todo';
+import rTodoController from './pages/r_todo';
 import ProjectController from './pages/Project';
 import photoSearchController from './pages/photoSearch';
 
@@ -28,6 +29,9 @@ $(function(){
 
   // My First Router: which page are we on ?
   switch(window.location.pathname){
+  case '/pages/r_todo.html':
+    new rTodoController();
+    break;
   case '/pages/bb_todo.html':
     new bbTodoController();
     break;

@@ -49,6 +49,12 @@
   margin-right: 50px;
   opacity: 0.8;
 }
+.image1:hover {
+  transform: rotateZ(360deg);
+  transition: transform 5s;
+  animation-iteration-count: infinite;
+ }
+
 .image2 img {
  
   
@@ -59,24 +65,17 @@
   margin-right: 50px;
   opacity: 0.8;
 }
-  .image:hover {
-  transform: rotateZ(360deg);
-  transition: transform 5s;
-  animation-iteration-count: infinite;
- }
-
-
+  
+ 
 .Head-row{
   margin-top: 20px;
   text-align: center;
   font-family: 'Wendy One', sans-serif;
 
 }
-.glyphicon {
-	float: right;
-	margin-top: -20px;
 
-}
+
+
 .frame iframe {
 	display: block;
 	margin-top: 50px;
@@ -110,4 +109,9 @@
 	font-size: 20px;
 	text-align: center;
 }
+.links {
+  margin-left: 50px;
+  font-size: 15px;
+}
+
 
