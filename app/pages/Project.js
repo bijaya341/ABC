@@ -13,10 +13,11 @@ var controller = {
 
   signupHandler: function(){
    
-    console.log('what');
+    document.write('what');
   },
   signinHandler: function(){
-    console.log('whats up');
+    console.log(123);
+
   }
 
 
