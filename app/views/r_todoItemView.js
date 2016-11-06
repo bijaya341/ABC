@@ -60,7 +60,7 @@ var ItemView = React.createClass({
     this.setState({editing: true});
   },
   saveTodo: function(){
-    var newTitle = document.querySelector(".title-edit-input").value;
+    var newTitle = document.querySelector('.title-edit-input').value;
     this.setState({editing: false});
     this.props.controller.editTodo(this.props.item.id, newTitle);
   }
