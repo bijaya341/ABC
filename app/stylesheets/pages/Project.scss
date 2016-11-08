@@ -34,20 +34,18 @@
   font-family: 'Michroma', sans-serif;
 }
 
-
-
-
 .add-Project{
   margin: 10px;
 }
 .image1 img {
   
   height: 480px;
-  width: 850px;
+  width: 100%;
   margin-top: 10px;
   margin-left: 50px;
   margin-right: 50px;
   opacity: 0.8;
+
 }
 .image1:hover {
   transform: rotateZ(360deg);
@@ -72,15 +70,14 @@
   text-align: center;
   font-family: 'Wendy One', sans-serif;
 
+
 }
 
-
-
-.frame iframe {
+.frame iframe src {
 	display: block;
+  position: absolute;
+  width: 100%;
 	margin-top: 50px;
-	margin-left: 100px;
-	margin-right: 100px;
 }
 
 .column-col1 {

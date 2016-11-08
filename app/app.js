@@ -13,7 +13,7 @@ import d3Controller from './pages/Yo';
 import threeController from './pages/three';
 import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
-import ProjectController from './pages/Project';
+import projectController from './pages/Project';
 import photoSearchController from './pages/photoSearch';
 
 
@@ -48,7 +48,7 @@ $(function(){
     threeController.init(); // jquery
     break;
   case '/pages/Project.html':
-    ProjectController.init(); 
+    projectController.init(); 
     break;
   case '/pages/photoSearch.html':
     new photoSearchController(); // backbone
