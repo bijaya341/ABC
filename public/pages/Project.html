@@ -7,6 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="description" content="">
   <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link rel="shortcut icon" href="/images/touch/touch-icon-57x57.png">
   <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
@@ -17,97 +18,207 @@
 </head>
   <body>
     <nav></nav>
+
     <main class="Project-container">
+
       <div class="row">
-        <div class="col-sm-12 Head-row">
+        <div class="col-sm-12 Heading">
           <h1>Window Fashion</h1>  
         </div>
       </div>
-      <div class="row add-Project">
+      
+      <div class="row button-Project">
         <div class="col-sm-6"></div>
         <div class="col-sm-2">
           <button class="btn btn-primary btn-add register1">sign up</button>
         </div>   
-         <div class="col-sm-2">
+          <div class="col-sm-2">
           <button class="btn btn-primary btn-add register2">sign in</button>
-        </div>   
+          </div>   
         <div class="col-sm-2">
           <input type="text" class="form-control search-input" placeholder="search"</input>
-          
-
         </div>
       </div>
-        <div id="contactdiv">
-          <form class="form" action="#" id="contact">
-          <h3>Registration Form</h3>
-          <label>username: <span>*</span></label>
+
+      <div id="signin">
+        <form class="form" id="contact">
+        <h3>SignIn</h3>
+        <label>username: <span>*</span></label>
+        <br/>
+        <input type="text" id="name" placeholder="UserName"/><br/>
+        <br/>
+        <label>password <span>*</span></label>
+        <br/>
+        <input type="text" id="pwd" placeholder="Password"/><br/>
+        </br>
+        <input type="button" id="submit" value="Submit" class="btn btn-primary btn-sm"/>
+        <input type="button" id="cancel" value="Cancel" class="btn btn-primary btn-sm"/>
+        <br/>
+        </form>
+      </div>
+
+      <div id="signup">
+        <form class="form1" id="contact1">
+          <h3>SignUp</h3>
+          <label>firstname: <span>*</span></label>
           <br/>
-          <input type="text" id="name" placeholder="Name"/><br/>
+          <input type="text" id="fname" placeholder="FirstName"/><br/>
+          <br/>
+          <label>lastname: <span>*</span></label>
+          <br/>
+          <input type="text" id="lname" placeholder="LastName"/><br/>
           <br/>
           <label>password <span>*</span></label>
           <br/>
-          <input type="text" id="pwd" placeholder="Password"/><br/>
+          <input type="text" id="regpwd" placeholder="Password"/><br/>
           </br>
-          <input type="button" id="submit" value="Submit"/>
-          <input type="button" id="cancel" value="Cancel"/>
+          <label>re-enter password <span>*</span></label>
           <br/>
-          </form>
-        </div>
-      
-        <div class="row">
-        
-        <div class="col-sm-12 image1">
-          <img src="https://www.blinds.com/i/Main-Image/503416/400x400/levolor-accordia-light-filtering-cellular-shade.jpg">
-          
-        </div>
-        <div class="col-sm-12 image2">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl2v8c7ymVyY2KkoUNYvUXQM_212Q_moYBfvrWVmWTM4QVTjSX">
-        </div>
-
-        <div class="row">
-         
-          <div class="col-sm-4 column-col1">
-            Worry Free Shopping Between our measuring insurance, 14-Day Price Guarantee and Satisfaction Guarantee, we've got you covered.
-            <p class="tech">Motorization</br>
-            Innovation
-            </p>
-
-          </div>
-          <div class="col-sm-4 column-col2">
-            No Robot Want to talk to a real person about your window? We've got hundreds of design consultants ready to help by phone and live chat.
-            <img src="https://insolroll.com/wp-content/uploads/insolroll-radiance-solar-screen-shade-arch-pocket.jpg">
-
-          </div>   
-          <div class="col-sm-4 column-col3">
-            Unbeatable Value It's hard to put a pricetag on easy. Fortunately, you'll still get lower prices than in brick-and-mortar stores, especially on Blinds.com brand products!
-          <p class="ctech">Duette Architella HoneyComb Shades</p>
-          </div>
-         
-        </div>  
-        
-      
-        <div class="frame">
-        <iframe src="//giphy.com/embed/eXATWP9XfXBcc" width="750" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/shade-eXATWP9XfXBcc">via GIPHY</a></p>
-        </div>
-        <div class="link">
-        <a href="https://www.blinds.com/installation">Installation process</a></div>
-
-        <div class="footer">
-          <div class="link-group">
-            <ul class="links">
-              <li>About Us</li>
-                <li>
-                <a href="http://advantagewindowcoverings.net"> Advantage
-                </li>
-                <li>
-                <a href="http://www.baliblinds.com/support/ContactUs.jsp"> Contact Us
-                </li>
-            </ul>
-            
-          </div>
-        </div>
-        
+          <input type="text" id="ren-regpwd" placeholder="Re-enter Password"/><br/>
+          </br>
+          <input type="button" id="reg-submit" value="Submit" class="btn btn-primary btn-sm"/>
+          <input type="button" id="reg-cancel" value="Cancel" class="btn btn-primary btn-sm"/>
+          <br/>
+        </form>
       </div>
+      
+      <div class="row visual">
+        <div class="col-sm-12 image1">
+        <img src="https://www.blinds.com/i/Main-Image/503416/400x400/levolor-accordia-light-filtering-cellular-shade.jpg">
+        </div>
+        <div class="imglink">
+          <div class="col-sm-3 image2">
+          <a href="#">Windowshades</a>
+          </div>
+          <div class="col-sm-3 image3">
+          <a href="#">architella</a>
+          </div>
+          <div class="col-sm-3 image4">
+          <a href="#">vignuette</a>
+          </div>
+          <div class="col-sm-3 image5">
+          <a href="#">silluette</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 column-col1">
+          Worry Free Shopping Between our measuring insurance, 14-Day Price Guarantee and Satisfaction Guarantee, we've got you covered.
+          <p class="tech">Motorization</br>
+          Innovation
+          </p>
+        </div>
+        <div class="col-sm-4 column-col2">
+          No Robot Want to talk to a real person about your window? We've got hundreds of design consultants ready to help by phone and live chat.
+          <ol class= "Char">
+            <li> <b>Weather resistant</b></li>
+            <li> <b>Durabilty</b></li>
+            <li> <b>Innovative Design</b></li>
+            <li> <b>Customer Satisfaction</b></li>
+          </ol>
+        </div>   
+        <div class="col-sm-4 column-col3">
+          Unbeatable Value It's hard to put a pricetag on easy. Fortunately, you'll still get lower prices than in brick-and-mortar stores, especially on Blinds.com brand products!
+        <p class="ctech">Duette Architella HoneyComb Shades</p>
+        </div>
+      </div>
+      <div class="descrip">
+        <div class="col-sm-4 one"><img src="https://cdn.hunterdouglas.com/static/carousel-item/os_main_img_top-down-bottom-up-shades.jpg">
+        </div>
+        <div class="col-sm-4 two"><img src="http://images.adsttc.com/media/images/55e6/0dcf/f034/d263/5600/0002/newsletter/foto-producto-1.jpg?1441140151">
+        </div>
+        <div class="col-sm-4 three"><img src="https://i.ytimg.com/vi/lvc_TsyG-kg/maxresdefault.jpg">
+        </div>
+      </div>
+      
+
+
+      </br>  
+      <div class="row">
+        <div class="col-sm-4 btn1">
+        <button class="btn btn-info framestr">frame</button>
+        </div>
+        <div class="col-sm-4 btn2">
+        <button class="btn btn-info diffWeather">weather</button>
+        </div>
+        <div class="col-sm-4 btn3">
+        <button class="btn btn-info types">types</button>
+        </div>
+      </div>
+
+      <div class="row temp">
+        <div class="col-sm-4 frame1">
+          <iframe src="//giphy.com/embed/eXATWP9XfXBcc" frameBorder="0"></iframe><p><a href="https://giphy.com/gifs/shade-eXATWP9XfXBcc">
+          </a><button class="btn btn-danger disappear">close</button></p>
+        </div>
+        <div class="col-sm-4 weather1">
+          <img src="http://dreamatico.com/data_images/weather/weather-7.jpg"><button class="btn btn-danger disappear1">close</button>
+          <h2><span>No Matters<br /><br />Durable and Weather Resistant</span></h2>
+        </div>
+        <div class="col-sm-4 typesof">
+          <ol>
+            <li> Light Filtering Shades </li>
+            <li> Blackout Shades </li>
+            <li> Wood Blinds </li>
+            <li> Cell Shades </li>
+          </ol>
+          <button class="btn btn-danger disappear2">close</button>
+        </div>
+      </div>
+
+      
+      
+      <div class="row footer">
+        <div class=" col-sm-4 link-group" >
+          <ul class="links">
+            <li><u><b>About Us</b></u></li>
+            <li>
+            <a href="http://advantagewindowcoverings.net"> Advantage</a>
+            </li>
+            <li>
+            <a href="https://www.hunterdouglas.com/child-safety">Child Safety</a>
+            </li>
+            <li>
+            <a href="https://www.blinds.com/installation">Installation process</a>
+            </li>
+            <li>
+            <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=career%20at%20window%20shades"> Career</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 link-group1">
+          <ul class="contactus">
+            <li><u><b>Contact us</b></u></li>
+            <li>
+              Tel:1-xxx-xxx-xxx </br>
+              Tel:1-xxx-xxx-xxx </br>
+              Fax:1-xxx-xxx-xxx
+            </li>
+            <li>
+            Contact Hours
+            </li>
+            <li>
+            M-F 8:00 AM to 6 PM
+
+            </li>
+            
+          </ul>
+        </div>
+
+        <div class="col-sm-4 social">
+          <h3>Linked with social media</h3>
+
+          <a class="facebook" href="https://www.facebook.com/HunterDouglas" class="facebook" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2e_JehDsT_ytljbvFDj4JgU6slqOdwD6yoZgAlFY4syl8U_d02Q"></a>
+
+          <a class="pinterest" href="http://www.pinterest.com/hunterdouglaswf/" class="pinterest" target="_blank"><img src="http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Pinterest-B-icon.png"</a>
+
+          <a class="map" href="https://www.google.com/maps/dir/39.9300084,-105.0966724/Hunter+Douglas,+1+Duette+Way,+Broomfield,+CO+80020/@39.9269902,-105.1106183,15z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x876b8b76d01c5789:0x5e8b77ed6a4e104f!2m2!1d-105.110377!2d39.927941!3e0"><img src="http://www.iconarchive.com/download/i89683/alecive/flatwoken/Apps-Google-Maps.ico"</a>
+        </div>
+      </div>
+     
+    </div>
 
     </main>
       <script src="/dist/app.js"></script>

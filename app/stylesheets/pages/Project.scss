@@ -7,77 +7,264 @@
   margin-left: auto;
   margin-right: auto;
   animation: pulse 5s infinite;
-
 }
+
+
 @keyframes pulse {
   0% {
     background-color: green;
   }
+  50% {
+    background-color: cyan;
+  }
   100% {
     background-color: grey;
   }
+
 }
+
+
+#signin {
+  visibility: hidden;
+  position: absolute;
+  top: 110px;
+  left: 855px;
+  z-index: 1;
+  padding: 15px;
+  margin-top: 30px;
+  background-image: 
+    url(http://media.gettyimages.com/videos/bright-particle-loop-blue-video-id161737627?s=640x640);
+}
+#signin.show {
+  visibility: visible;
+}
+
+
+#signup {
+  visibility: hidden;
+  position: absolute;
+  top: 110px;
+  left: 650px;
+  z-index: 1;
+  
+background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+background-size:110px 200px;
+background-repeat:repeat-x;
+  padding: 15px;
+  margin-top: 30px;
+}
+#signup.show {
+  visibility: visible;
+}
+
 
 .tech{
   font-size: 35px;
   transform: rotate(-30deg);
   margin-top: 40px;
-  color: blue;
+  color: cyan;
   font-family: 'Michroma', sans-serif;
 }
+
+
 .ctech{
   font-size: 20px;
   transform: rotate(-20deg);
-  margin-top: 40px;
-  margin-left: 20px;
-  color: blue;
+  margin-top: 10px;
+  margin-left: 30px;
+  color: grey;
   font-family: 'Michroma', sans-serif;
 }
 
-.add-Project{
+
+.button-Project{
   margin: 10px;
 }
+
+
 .image1 img {
-  
   height: 480px;
   width: 100%;
   margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  opacity: 0.8;
-
+  opacity: 0.8;   
 }
-.image1:hover {
-  transform: rotateZ(360deg);
-  transition: transform 5s;
-  animation-iteration-count: infinite;
+
+
+.image1 {
+  animation: zoom-out 25s infinite;
+  animation-timing-function: linear;
  }
 
-.image2 img {
- 
-  
-  height: 280px;
-  width: 450px;
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  opacity: 0.8;
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.70);
+  }
+  50% {
+    transform: scale(0.70);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
-  
- 
-.Head-row{
+
+
+.visual{
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Shrikhand', cursive;
+  background: 
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+background-color: #840b2a;
+}
+
+
+.image2 a {
+    color: tan;    
+}
+.image3 a {
+    color: voilet;    
+}
+.image4 a {
+    color: red;   
+}
+.image5 a {
+    color: orange;    
+}
+
+
+.image2 , .image3, .image4, .image5 {
+  margin-top: 10px;
+}
+
+
+
+
+.Heading{
   margin-top: 20px;
   text-align: center;
   font-family: 'Wendy One', sans-serif;
+  color: brown;
+  font-size: 10;
+  transition: font-size 10s;  
+}
+.zoom-out{
+  font-size: 20px;
+}
+/*.zoom-in{
+  font-size: 10px; 
+}*/
 
-
+.descrip {
+  margin-top: 30px;
 }
 
-.frame iframe src {
+.descrip > div {
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  transition: all 20s ease;
+}
+.descrip > div img{
+   width: 100%;
+}
+
+.descrip > div.change {
+  height: 200px;
+}
+
+
+.Char {
+  margin-top: 20px;
+  font-size: 20px;
+  color: green;
+  font-family: 'Shrikhand', cursive;
+}
+
+
+.btn1, .btn2, .btn3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.temp.show1 {
+  height: 180px;
+}
+.temp.show2 {
+  height: 180px;
+}
+.temp.show3 {
+  height: 180px;
+}
+
+.frame1 iframe src {
 	display: block;
   position: absolute;
-  width: 100%;
+  height: 600px;
+  width: auto;
 	margin-top: 50px;
+}
+.frame1 {
+  margin-top: 20px;
+  margin-left: 60px;
+  position: absolute;
+  display: none;
+}
+
+.frame1.show {
+  display: block;
+}
+
+
+.weather1 {
+  margin-top: 10px;
+  margin-left: 60px;
+  position: absolute;
+  display: none;
+  height: 200px;
+  width: 350px;  
+}
+.weather1.show {
+  display: block;
+  left: 33%;
+}
+
+ 
+.typesof {
+  margin-top: 20px;
+  margin-left: 100px;
+  position: absolute;
+  display: none;
+  height: 100px;
+  width: 300px; 
+}
+.typesof.show {
+  visibility: visible;
+  display: block;
+  left: 66%;
+}
+
+
+.typesof ol li {
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: 'Wendy One', sans-serif;
 }
 
 .column-col1 {
@@ -85,8 +272,7 @@
 	font-size: 15px;
 	margin-top: 50px;
 	margin-left: 20px;
-}
-	
+}	
 .column-col2 {
 	display: block;
 	font-size: 15px;
@@ -98,17 +284,67 @@
 	margin-top: 150px;
 	margin-left: -20px;
 }
-.frame {
-	
-	margin-left: 20px;
+
+
+.weather1 h2{
+  color: green;
+  font-family: 'Shrikhand', cursive;
+  transform: rotate(-30deg);
+  margin-top: -200px;
+  font-size: 20px;
 }
-.link {
-	font-size: 20px;
-	text-align: center;
+
+
+.trans {
+  position: relative;
+  display: none;
+  margin-top: 160px;
+  height: 100px;
 }
-.links {
-  margin-left: 50px;
+
+.trans.show {
+  display: block;
+}
+
+.links{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 30px;
   font-size: 15px;
 }
+
+.link-group {
+  margin-top: 40px;
+}
+
+.link-group1{
+  position: relative;
+  margin-top: 70px;
+  font-size: 15px;
+  margin-left: 60px;
+}
+
+
+.social{
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+  margin-left: -60px;
+}
+.social img{
+  position: relative;
+  height:30px;
+  width: 30px; 
+}
+.pinterest img {
+  margin-left: 5px;
+}
+.map img {
+  margin-left: 5px;
+}
+
+
+
+
 
 

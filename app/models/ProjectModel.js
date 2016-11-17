@@ -1,13 +1,13 @@
 import lscache from 'lscache';
 
-var database ={};
+var database =[];
 var model = {
   init: function(){
     var savedData = lscache.get('Project');
     if (savedData) {
       database = savedData;
     } else {
-      database = {};
+      database = [];
     }
   },
   save: function(){

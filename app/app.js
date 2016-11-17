@@ -15,6 +15,7 @@ import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
 import projectController from './pages/Project';
 import photoSearchController from './pages/photoSearch';
+import portfolioController from './pages/portfolio';
 
 
 // import multimediaController from './pages/multimedia';
@@ -52,6 +53,9 @@ $(function(){
     break;
   case '/pages/photoSearch.html':
     new photoSearchController(); // backbone
+    break;
+  case '/pages/portfolio.html':
+    portfolioController.init(); // jquery
     break;
   }
 
