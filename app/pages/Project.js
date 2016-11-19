@@ -81,6 +81,7 @@ var controller = {
     event.preventDefault();
     $('#signup').removeClass('show');
     // $('#signup').html('.popup show');
+    $('.popup').removeClass('hide');
   },
 
 
@@ -131,7 +132,7 @@ var controller = {
     $('.temp').removeClass('show3');
   },
   crossHandler: function(){
-    $('.popup').removeClass('show');
+    $('.popup').addClass('hide');
   }
     
  

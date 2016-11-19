@@ -217,10 +217,11 @@ background-color: #840b2a;
   background-color:#aa98a9;
   padding: 5px;
   font-size: 15px;
+  z-index: 2;
 }
 
 
-.popup.show {
+.popup.hide{
   visibility: hidden;
 }
   
