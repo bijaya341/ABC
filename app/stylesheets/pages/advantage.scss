@@ -1,0 +1,76 @@
+
+.adv { 
+	width: 100%;
+	height: auto;
+	background-color: tan;
+	animation: random 5s infinite;
+}
+
+
+@keyframes random {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+.ad1 {
+	margin-top: 20px;
+	padding-top: 20px;
+	text-align: center;
+	font-family: 'Shrikhand', cursive;
+	font-size: 40px;
+}
+.adimg1 img{
+	margin-top: 20px;
+	margin-left: 20px;
+	float: center;
+	height: 300px;
+	animation: zoom-out 25s infinite;
+    animation-timing-function: linear;
+}
+.adimg2 img{
+	margin-top: 20px;
+	float: center;
+	height: 300px;
+	width: 470px;
+}
+.text1, .text2 {
+	font-size: 20px;
+	text-align: center;
+}
+.text3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.text4 {
+	font-size: 15px;
+	margin-top: -30px;
+}
+.adimg3 img {
+	margin-top: -30px;
+}
+.adimg4 img {
+	height: 200px;
+	width: 300px;
+}
+.adimg5 img {
+	height: 200px;
+	width: 300px;
+
+}
+.text5 {
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+

@@ -3,7 +3,6 @@
   position: relative;
   height: auto;
   width: 100%;
-  background-color: tan;
   margin-left: auto;
   margin-right: auto;
   animation: pulse 5s infinite;
@@ -20,7 +19,6 @@
   100% {
     background-color: grey;
   }
-
 }
 
 
@@ -28,7 +26,7 @@
   visibility: hidden;
   position: absolute;
   top: 110px;
-  left: 855px;
+  left: 686px;
   z-index: 1;
   padding: 15px;
   margin-top: 30px;
@@ -44,7 +42,7 @@
   visibility: hidden;
   position: absolute;
   top: 110px;
-  left: 650px;
+  left: 520px;
   z-index: 1;
   
 background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
@@ -160,15 +158,30 @@ background-color: #840b2a;
   text-align: center;
   font-family: 'Wendy One', sans-serif;
   color: brown;
+  text-shadow: 2px 2px 4px #fe4902;
   font-size: 10;
-  transition: font-size 10s;  
+  transition: font-size 10s; 
+  
 }
 .zoom-out{
   font-size: 20px;
 }
-/*.zoom-in{
-  font-size: 10px; 
-}*/
+
+.Heading:hover{
+  animation: color 5s infinite;
+}
+
+@keyframes color {
+  0% {
+    color: brown;
+  }
+  50% {
+    color: #8125B8;
+  }
+  100% {
+    color: brown;
+  }
+}
 
 .descrip {
   margin-top: 30px;
@@ -186,7 +199,7 @@ background-color: #840b2a;
 }
 
 .descrip > div.change {
-  height: 200px;
+  height: 180px;
 }
 
 
@@ -196,6 +209,23 @@ background-color: #840b2a;
   color: green;
   font-family: 'Shrikhand', cursive;
 }
+
+.popup {
+  /*visibility: hidden;*/
+  position: absolute;
+  margin-left: 480px;
+  background-color:#aa98a9;
+  padding: 5px;
+  font-size: 15px;
+}
+
+
+.popup.show {
+  visibility: hidden;
+}
+  
+  
+
 
 
 .btn1, .btn2, .btn3 {
@@ -323,6 +353,9 @@ background-color: #840b2a;
   font-size: 15px;
   margin-left: 60px;
 }
+.contactus {
+  color: #b7c014;
+}
 
 
 .social{
@@ -333,6 +366,7 @@ background-color: #840b2a;
 }
 .social img{
   position: relative;
+  margin-top: 10px;
   height:30px;
   width: 30px; 
 }
@@ -342,6 +376,21 @@ background-color: #840b2a;
 .map img {
   margin-left: 5px;
 }
+
+
+.links a {
+    color: #b7c014;
+}
+.links a:hover {
+    color: green;
+}
+.links a:active {
+    color: blue;
+}
+
+
+
+
 
 
 

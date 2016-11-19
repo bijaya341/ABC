@@ -29,4 +29,7 @@
   <li>
     <a href="/pages/portfolio.html">Portfolio</a>
   </li>
+  <li>
+    <a href="/pages/advantage.html">Advantage</a>
+  </li>
 <ul>

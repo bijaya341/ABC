@@ -1,6 +1,7 @@
 .resume {
 	height: auto;
 	width: auto;
+	background-image:url(http://previews.123rf.com/images/vlastas/vlastas1109/vlastas110900006/10622376-tech-background-in-the-blue-Stock-Vector-technology-background-abstract.jpg);
 
 }
 
@@ -21,25 +22,45 @@ hr {
     border-width: 5px;
     border-color: grey;
 }
-.personal {
-	font-size: 15px;
+.personal , summary{
+	font-size: 20px;
 	font-weight: bold;
 }
-.edu {
+.edu, .cert, .skills {
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.cert {
-	font-size: 25px;
-	font-weight: bold;
-
-}
 .birth {
+	text-align: center;
 	text-shadow: 1px 1px 1px tan, 3px 3px 5px green;
 }
-.html, .css, .form-control, .engg, .jcert, .jquery, #Checkbox, .radio{
-	font-size: 15px;
+.html, .css, .form-control, .engg, .jcert, .jquery, #Checkbox, .radio, .dropdown-item, .checkers{
+	font-size: 20px;
+}
+.three {
+	margin-top: 20px;
+}
+.bgher {
+	background-color: #026873;
+background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+background-size: 13px, 29px, 37px, 53px;
+padding: 40px;
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+
+}
+
+.bggit {
+	transform: rotatez(300deg);
+	background: -webkit-linear-gradient(45deg, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    text-align: center;
+    padding-top: 30px;
+    
 }
 
 

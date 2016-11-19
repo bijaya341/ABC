@@ -16,6 +16,7 @@ import rTodoController from './pages/r_todo';
 import projectController from './pages/Project';
 import photoSearchController from './pages/photoSearch';
 import portfolioController from './pages/portfolio';
+import advantageController from './pages/advantage';
 
 
 // import multimediaController from './pages/multimedia';
@@ -56,6 +57,9 @@ $(function(){
     break;
   case '/pages/portfolio.html':
     portfolioController.init(); // jquery
+    break;
+  case '/pages/advantage.html':
+    advantageController.init(); // jquery
     break;
   }
 

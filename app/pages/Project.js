@@ -9,15 +9,20 @@ var controller = {
   init: function(){
     
     // model.init();
+
+
+
     controller.createEventHandlers();
     $('.Heading').addClass('zoom-out');
-
+    
     $(window).on('scroll', function(){
       var scrollTop = $(document).scrollTop();
       if (scrollTop > 800) {
         $('.descrip div').addClass('change');
       }
     });
+    
+     
   },
 
   
@@ -47,7 +52,7 @@ var controller = {
     $('.disappear').on('click', controller.closeHandler);
     $('.disappear1').on('click', controller.close1Handler);
     $('.disappear2').on('click', controller.close2Handler);
-
+    $('.cross').on('click', controller.crossHandler);
 
 
 
@@ -72,8 +77,10 @@ var controller = {
   regcancelHandler: function(){
     $('#signup').removeClass('show');
   },
-  regsubmitHandler: function(){
+  regsubmitHandler: function(event){
+    event.preventDefault();
     $('#signup').removeClass('show');
+    // $('#signup').html('.popup show');
   },
 
 
@@ -122,6 +129,9 @@ var controller = {
   close2Handler: function(){
     $('.typesof').removeClass('show');
     $('.temp').removeClass('show3');
+  },
+  crossHandler: function(){
+    $('.popup').removeClass('show');
   }
     
  

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="description" content="">
-  <title>Todo App</title>
+  <title>Project App</title>
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link rel="shortcut icon" href="/images/touch/touch-icon-57x57.png">
   <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
@@ -57,6 +57,12 @@
         </form>
       </div>
 
+      <div class="popup">registration successful
+        <button type="button" class="cross" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
       <div id="signup">
         <form class="form1" id="contact1">
           <h3>SignUp</h3>
@@ -72,12 +78,12 @@
           <br/>
           <input type="text" id="regpwd" placeholder="Password"/><br/>
           </br>
-          <label>re-enter password <span>*</span></label>
+          <label>confirm password <span>*</span></label>
           <br/>
-          <input type="text" id="ren-regpwd" placeholder="Re-enter Password"/><br/>
+          <input type="text" id="cpassword" placeholder="Re-enter Password"/><br/>
           </br>
-          <input type="button" id="reg-submit" value="Submit" class="btn btn-primary btn-sm"/>
-          <input type="button" id="reg-cancel" value="Cancel" class="btn btn-primary btn-sm"/>
+          <button id="reg-submit" class="btn btn-primary btn-sm">Submit</button>
+          <button id="reg-cancel" class="btn btn-primary btn-sm">Cancel</button>
           <br/>
         </form>
       </div>
@@ -174,7 +180,7 @@
           <ul class="links">
             <li><u><b>About Us</b></u></li>
             <li>
-            <a href="http://advantagewindowcoverings.net"> Advantage</a>
+            <a href="http://localhost:8080/pages/advantage.html"> Advantage</a>
             </li>
             <li>
             <a href="https://www.hunterdouglas.com/child-safety">Child Safety</a>
@@ -185,23 +191,21 @@
             <li>
             <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=career%20at%20window%20shades"> Career</a>
             </li>
+            <li>
+            <a href="http://localhost:8080/pages/portfolio.html"> Sample Portfolio</a>
+            </li>
           </ul>
         </div>
 
         <div class="col-sm-4 link-group1">
-          <ul class="contactus">
+          <ul>
             <li><u><b>Contact us</b></u></li>
-            <li>
+            <li class="contactus">
               Tel:1-xxx-xxx-xxx </br>
               Tel:1-xxx-xxx-xxx </br>
-              Fax:1-xxx-xxx-xxx
-            </li>
-            <li>
-            Contact Hours
-            </li>
-            <li>
-            M-F 8:00 AM to 6 PM
-
+              Fax:1-xxx-xxx-xxx </br>
+              Contact Hours </br>
+              M-F 8:00 AM to 6 PM
             </li>
             
           </ul>
@@ -210,7 +214,7 @@
         <div class="col-sm-4 social">
           <h3>Linked with social media</h3>
 
-          <a class="facebook" href="https://www.facebook.com/HunterDouglas" class="facebook" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2e_JehDsT_ytljbvFDj4JgU6slqOdwD6yoZgAlFY4syl8U_d02Q"></a>
+          <a class="facebook" href="https://www.facebook.com/HunterDouglas" class="facebook" target="_blank"><img src="http://www.feedster.com/wp-content/uploads/2015/10/facebook.jpg"></a>
 
           <a class="pinterest" href="http://www.pinterest.com/hunterdouglaswf/" class="pinterest" target="_blank"><img src="http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Pinterest-B-icon.png"</a>
 
